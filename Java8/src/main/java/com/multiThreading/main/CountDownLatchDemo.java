@@ -28,7 +28,7 @@ class ThirdPartyCall extends Thread
             Thread.sleep(delay);
             System.out.println("Evaluating"+ Thread.currentThread().getName()+ " result");
             value+=1000;
-           // latch.countDown();
+            latch.countDown();
         }
         catch (InterruptedException e)
         {
