@@ -22,7 +22,7 @@ public class PreDefinedFuntionalInterface {
         List<Student> filteredStudentList= studentList.stream().filter(criteriaMarks).collect(Collectors.toList());
         System.out.println(filteredStudentList);
 
-        //Consumer - getting all students name whose marks greater than 70
+        //Consumer - getting all students name whose marks greater than 80
         System.out.println("******* Consumer - Getting all students name whose marks greater than 80 *********");
         Consumer<Student>consumer = student -> System.out.println(student.getName());
         studentList.stream().filter(criteriaMarks).forEach(consumer);
